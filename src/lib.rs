@@ -1,6 +1,6 @@
-// pub mod configuration;
-// pub mod startup;
+pub mod configuration;
 pub mod routes;
+pub mod startup;
 
 use actix_web::dev::Server;
 use actix_web::{web, App, HttpServer};
