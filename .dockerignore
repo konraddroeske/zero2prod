@@ -1,0 +1,10 @@
+.idea/
+.git/
+.github/
+.cargo/
+target/
+tests/
+Dockerfile
+scripts/
+migrations/
+docs/
