@@ -34,12 +34,14 @@ impl EmailClient {
         text_content: &str,
     ) -> Result<(), reqwest::Error> {
         let url = format!("{}/email", self.base_url);
+
         let request_body = SendEmailRequest {
             from: self.sender.as_ref(),
             to: recipient.as_ref(),
             subject,
             html_body: html_content,
             text_body: text_content,
+            message_stream: "outbound",
         };
 
         self.http_client
@@ -57,7 +59,7 @@ impl EmailClient {
     }
 }
 
-#[derive(serde::Serialize)]
+#[derive(serde::Serialize, Debug)]
 #[serde(rename_all = "PascalCase")]
 struct SendEmailRequest<'a> {
     from: &'a str,
@@ -65,6 +67,7 @@ struct SendEmailRequest<'a> {
     subject: &'a str,
     html_body: &'a str,
     text_body: &'a str,
+    message_stream: &'a str,
 }
 
 #[cfg(test)]
