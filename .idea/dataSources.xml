@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="newsletter@localhost" uuid="ec07c580-72bb-48bb-aaea-367ab51ecaa8">
+    <data-source source="LOCAL" name="Zero2Prod - Local" uuid="ec07c580-72bb-48bb-aaea-367ab51ecaa8">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/newsletter</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Zero2Prod - Prod" uuid="bef5006e-a51b-41fe-a7a0-5c66b8a7de39">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://app-775aadc7-fa88-4274-a2c3-87cff890efa1-do-user-7758340-0.b.db.ondigitalocean.com:25060/newsletter</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

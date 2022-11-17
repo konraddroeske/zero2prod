@@ -11,3 +11,9 @@ So that... I can receive e-mail updates when new content is published on the blo
 As a... blog author 
 I want to... email all my subscribers, 
 So that... I can notify them when new content is published. 
+
+### Story #2 - Revisited
+
+As a... blog author
+I want to... email all my *confirmed* subscribers,
+So that... I can notify them when new content is published. 
